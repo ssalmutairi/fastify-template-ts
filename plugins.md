@@ -1,0 +1,14 @@
+@fastify/compress
+@fastify/cors
+@fastify/formbody
+@fastify/helmet
+@fastify/jwt
+@fastify/multipart
+@fastify/one-line-logger
+@fastify/rate-limit
+@fastify/redis
+@fastify/swagger
+@fastify/swagger-ui
+@fastify/type-provider-json-schema-to-ts
+@fastify/type-provider-typebox
+@fastify/websocket
