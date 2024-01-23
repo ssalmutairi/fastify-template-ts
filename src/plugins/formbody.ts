@@ -1,7 +1,6 @@
-import fp from 'fastify-plugin'
-import formbody, { FastifyFormbodyOptions } from '@fastify/formbody'
-
+import fp from "fastify-plugin";
+import formbody, { FastifyFormbodyOptions } from "@fastify/formbody";
 
 export default fp<FastifyFormbodyOptions>(async (fastify) => {
-    fastify.register(formbody, {})
-})
+  fastify.register(formbody, {});
+});

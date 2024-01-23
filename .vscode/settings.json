@@ -1,0 +1,12 @@
+{
+    "esilint.validte":["javascript","typescript"],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#332B37",
+        "titleBar.activeBackground": "#473C4D",
+        "titleBar.activeForeground": "#FBFAFB"
+    }
+
+}
