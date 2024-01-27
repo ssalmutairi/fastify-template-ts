@@ -1,25 +1,24 @@
 import { Type, Static } from "@sinclair/typebox";
 
 const IHeader = Type.Object({
-  "x-custom-key": Type.String(),
+  "x-custom-key": Type.Optional(Type.String()),
 });
 type THeader = Static<typeof IHeader>;
 
 const IParams = Type.Object({
-  page: Type.Number(),
-  pageSize: Type.Number(),
+  page: Type.Number({ default: 1 }),
+  pageSize: Type.Number({ default: 10 }),
 });
 type TParams = Static<typeof IParams>;
 
 const IQuerystring = Type.Object({
-  filter: Type.String(),
+  filter: Type.Optional(Type.String()),
 });
 type TQuerystring = Static<typeof IQuerystring>;
 
 const IBody = Type.Object({
   name: Type.String(),
   age: Type.Number(),
-
 });
 type TBody = Static<typeof IBody>;
 

@@ -11,8 +11,7 @@ const plugin: FastifyPluginAsyncTypebox = async (fastify): Promise<void> => {
     handler: async (request) => {
       const { } = request;
 
-
-      return "this is an example";
+      return "this is a template";
     },
   });
 };

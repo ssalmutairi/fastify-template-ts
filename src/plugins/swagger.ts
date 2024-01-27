@@ -10,19 +10,18 @@ export default fp<FastifySwaggerUiOptions>(async (fastify) => {
       deepLinking: false,
     },
     uiHooks: {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       onRequest: function (request, reply, next) {
         next();
       },
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
       preHandler: function (request, reply, next) {
         next();
       },
     },
     staticCSP: true,
     transformStaticCSP: (header) => header,
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    transformSpecification: (swaggerObject, request, reply) => {
+
+    transformSpecification: (swaggerObject) => {
       return swaggerObject;
     },
     transformSpecificationClone: true,
