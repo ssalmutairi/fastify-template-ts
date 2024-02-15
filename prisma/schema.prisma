@@ -6,12 +6,13 @@ generator client {
 }
 
 datasource db {
-  provider = "mongodb"
-  url      = "mongodb://localhost:27017/mydb"
+  provider = "mysql"
+  url      = "mysql://root:password@localhost:3306/db"
 }
 
 model User {
-  id    String  @id @default(auto()) @map("_id") @db.ObjectId
-  email String  @unique
-  name  String?
+  id       BigInt  @id @default(autoincrement())
+  email    String  @unique
+  name     String?
+  password String
 }
